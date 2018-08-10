@@ -1,0 +1,32 @@
+{
+    "name": "moguyun-cms/iframe",
+    "description": "moguyun iframe",
+    "type": "moguyun-cms-extension",
+    "version": "0.0.1",
+    "keywords": [
+        "moguyun-cms-extension",
+        "iframe"
+    ],
+    "support": {
+        "docs": "https://github.com/moguyun-cms/iframe/blob/master/README.md",
+        "issues": "https://github.com/moguyun-cms/iframe/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zackseo",
+            "homepage": "https://zacksleo.github.io"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "moguyun\\cms\\iframe\\": "src/"
+        }
+    }
+}
