@@ -52,4 +52,13 @@ class Iframe extends \yii\db\ActiveRecord
             'updated_at' => '更新时间',
         ];
     }
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => \yii\behaviors\TimestampBehavior::className(),
+            ],
+        ];
+    }
 }
