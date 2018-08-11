@@ -12,6 +12,7 @@ use yii;
  * @property string $title 标题
  * @property string $keywords 关键词
  * @property string $description 描述
+ * @property string $url 网址
  * @property int $created_at 创建时间
  * @property int $updated_at 更新时间
  */
@@ -31,8 +32,9 @@ class Iframe extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['slug', 'title'], 'required'],
-            [['created_at', 'updated_at'], 'integer'],
+            [['slug', 'title', 'url'], 'required'],
+            ['url', 'url'],
+            [['created_at', 'updated_at','height'], 'integer'],
             [['slug', 'title', 'keywords', 'description'], 'string', 'max' => 255],
         ];
     }
@@ -48,6 +50,8 @@ class Iframe extends \yii\db\ActiveRecord
             'title' => '标题',
             'keywords' => '关键词',
             'description' => '描述',
+            'url' => '网址',
+            'height' => '页面高度',
             'created_at' => '创建时间',
             'updated_at' => '更新时间',
         ];

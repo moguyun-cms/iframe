@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Iframe', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('添加', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -22,11 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'slug',
-            'title',
-            'keywords',
-            'description',
+            'url',
             //'created_at',
             //'updated_at',
 

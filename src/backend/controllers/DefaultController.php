@@ -10,9 +10,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * IframeController implements the CRUD actions for Iframe model.
+ * DefaultController implements the CRUD actions for Iframe model.
  */
-class IframeController extends Controller
+class DefaultController extends Controller
 {
     /**
      * @inheritdoc
