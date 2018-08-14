@@ -3,7 +3,7 @@
 namespace moguyun\cms\iframe\backend\controllers;
 
 use Yii;
-use common\models\Iframe;
+use moguyun\cms\iframe\common\models\Iframe;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
